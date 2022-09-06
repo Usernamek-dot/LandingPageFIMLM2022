@@ -1,9 +1,12 @@
 import { AppNavigation } from "./routes/AppNavigation";
-import "./App.css";
 function App() {
   return (
-    <div className="App">
-      <AppNavigation />
+    <div>
+      <h3 className="customFont">hello wolrd</h3>
+      <h1 className="customFont font-medium leading-tight text-5xl mt-0 mb-2 text-white-600">
+        Tailwind Elements
+      </h1>
+      {/* <AppNavigation /> */}
     </div>
   );
 }
