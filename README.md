@@ -20,6 +20,7 @@ Studies
 Resources:
 
 React router / https://reactrouter.com/en/main/getting-started/installation
+Pallete /  https://www.happyhues.co/palettes/12
 
 *************
 
