@@ -25,6 +25,8 @@ Pallete /  https://www.happyhues.co/palettes/12
 
 Grid layout / https://www.w3schools.com/css/css_grid.asp
 
+Dark / https://mui.com/material-ui/customization/dark-mode/
+
 *************
 
 Applied routing basic excersise:
