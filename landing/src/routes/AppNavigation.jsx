@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import { Navbar } from "../components/Navbar";
 import { Contact, Home, About, Portfolio } from "../page/exports";
-import { Navbar } from "../page/pages/Navbar";
 export const AppNavigation = () => {
   return (
     <>
