@@ -1,24 +1,7 @@
-import { Link } from "react-router-dom";
-import logo from "../assets/avatarlogo.svg";
-import {
-  Typography,
-  Toolbar,
-  ListItemText,
-  ListItemIcon,
-  ListItemButton,
-  ListItem,
-  List,
-  AppBar,
-  Box,
-  CssBaseline,
-  Divider,
-  Drawer,
-  IconButton,
-} from "@mui/material";
-import AccessibilityIcon from "@mui/icons-material/Accessibility";
-import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Box, CssBaseline, Drawer } from "@mui/material";
 import { useState } from "react";
+import { DrawerSidebar } from "./DrawerSidebar";
+import { Navbar } from "./Navbar";
 
 export const Sidebar = (props) => {
   const drawerWidth = 240;
@@ -29,84 +12,95 @@ export const Sidebar = (props) => {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-  const drawer = (
-    <div>
-      <Toolbar />
-      <Divider />
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/Home">
-              <ListItemText primary="Dashboard" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
-      </List>
-      <Divider />
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/About">
-              <ListItemText primary="About" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/Portfolio">
-              <ListItemText primary="Portfolio" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/Contact">
-              <ListItemText primary="Contact" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </div>
-  );
+  // const drawer = (
+  //   <div>
+  //     <Toolbar />
+  //     <Divider />
+  //     <List>
+  //       <ListItem disablePadding>
+  //         <ListItemButton>
+  //           <ListItemIcon>
+  //             <AccessibilityNewIcon />
+  //           </ListItemIcon>
+  //           <Link to="/Home">
+  //             <ListItemText primary="Dashboard" />
+  //           </Link>
+  //         </ListItemButton>
+  //       </ListItem>
+  //     </List>
+  //     <Divider />
+  //     <List>
+  //       <ListItem disablePadding>
+  //         <ListItemButton>
+  //           <ListItemIcon>
+  //             <AccessibilityNewIcon />
+  //           </ListItemIcon>
+  //           <Link to="/About">
+  //             <ListItemText primary="About" />
+  //           </Link>
+  //         </ListItemButton>
+  //       </ListItem>
+  //       <ListItem disablePadding>
+  //         <ListItemButton>
+  //           <ListItemIcon>
+  //             <AccessibilityNewIcon />
+  //           </ListItemIcon>
+  //           <Link to="/Portfolio">
+  //             <ListItemText primary="Portfolio" />
+  //           </Link>
+  //         </ListItemButton>
+  //       </ListItem>
+  //       <ListItem disablePadding>
+  //         <ListItemButton>
+  //           <ListItemIcon>
+  //             <AccessibilityNewIcon />
+  //           </ListItemIcon>
+  //           <Link to="/Contact">
+  //             <ListItemText primary="Contact/footer" />
+  //           </Link>
+  //         </ListItemButton>
+  //       </ListItem>
+  //       <ListItem disablePadding>
+  //         <ListItemButton disabled>
+  //           <ListItemIcon>
+  //             <AccessibilityNewIcon />
+  //           </ListItemIcon>
+  //           <Link to="/">
+  //             <ListItemText primary="Programming Languages" />
+  //           </Link>
+  //         </ListItemButton>
+  //       </ListItem>
+  //       <ListItem disablePadding>
+  //         <ListItemButton disabled>
+  //           <ListItemIcon>
+  //             <AccessibilityNewIcon />
+  //           </ListItemIcon>
+  //           <Link to="/">
+  //             <ListItemText primary="Study" />
+  //           </Link>
+  //         </ListItemButton>
+  //       </ListItem>
+  //       <ListItem disablePadding>
+  //         <ListItemButton disabled>
+  //           <ListItemIcon>
+  //             <AccessibilityNewIcon />
+  //           </ListItemIcon>
+  //           <Link to="/">
+  //             <ListItemText primary="Form" />
+  //           </Link>
+  //         </ListItemButton>
+  //       </ListItem>
+  //     </List>
+  //   </div>
+  // );
 
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar
-        position="fixed"
-        sx={{
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-          ml: { sm: `${drawerWidth}px` },
-        }}
-      >
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Landing
-          </Typography>
-          <img src={logo} alt="logo" />
-        </Toolbar>
-      </AppBar>
+      <Navbar
+        drawerWidth={drawerWidth}
+        handleDrawerToggle={handleDrawerToggle}
+      />
       <Box
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
@@ -128,7 +122,8 @@ export const Sidebar = (props) => {
             },
           }}
         >
-          {drawer}
+          <DrawerSidebar />
+          {/* {drawer} */}
         </Drawer>
         <Drawer
           variant="permanent"
@@ -141,28 +136,9 @@ export const Sidebar = (props) => {
           }}
           open
         >
-          {drawer}
+          <DrawerSidebar />
+          {/* {drawer} */}
         </Drawer>
-      </Box>
-      <Box
-        component="main"
-        sx={{
-          flexGrow: 1,
-          p: 3,
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-        }}
-      >
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            {/* <img src={logo} alt="logo" /> */}
-          </IconButton>
-        </Toolbar>
       </Box>
     </Box>
   );
