@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import { Navbar } from "../components/Navbar";
+import { Sidebar } from "../components/Sidebar";
 import { Contact, Home, About, Portfolio } from "../page/exports";
 export const AppNavigation = () => {
   return (
     <>
       <div className="App">
-        <Navbar />
+        <Sidebar />
         <h1>Welcome to React Router! 👜 </h1>
         <Routes>
           <Route path="/*" element={<Home />} />
