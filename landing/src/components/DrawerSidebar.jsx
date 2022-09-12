@@ -18,7 +18,7 @@ export const DrawerSidebar = () => {
       <List>
         <ListItem disablePadding>
           <ListItemButton>
-            <ListItemIcon>
+            <ListItemIcon color="primary">
               <AccessibilityNewIcon />
             </ListItemIcon>
             <Link to="/Home">
