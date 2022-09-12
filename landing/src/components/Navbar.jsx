@@ -13,6 +13,7 @@ export const Navbar = ({ drawerWidth, handleDrawerToggle }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
+        color="background"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },

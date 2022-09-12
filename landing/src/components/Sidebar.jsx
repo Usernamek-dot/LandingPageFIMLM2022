@@ -1,5 +1,4 @@
-import { Box, 
-  Drawer } from "@mui/material";
+import { Box, Drawer } from "@mui/material";
 import { useState } from "react";
 import { DrawerSidebar } from "./DrawerSidebar";
 import { Navbar } from "./Navbar";
@@ -42,7 +41,6 @@ export const Sidebar = (props) => {
           }}
         >
           <DrawerSidebar />
-          {/* {drawer} */}
         </Drawer>
         <Drawer
           variant="permanent"

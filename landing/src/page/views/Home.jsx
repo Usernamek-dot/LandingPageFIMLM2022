@@ -1,9 +1,14 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 export const Home = () => {
   return (
-    <Typography color="primary" variant="h1" sx={{ ml: 40 }}>
-      Home
-    </Typography>
+    <div className="mt-10">
+      <Typography sx={{ ml: 40 }} color="primary" variant="h1">
+        Home
+      </Typography>
+      <Button sx={{ ml: 40 }} large variant="contained" color="secondary">
+        Home
+      </Button>
+    </div>
   );
 };
