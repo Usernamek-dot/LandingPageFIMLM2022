@@ -16,79 +16,79 @@ export const DrawerSidebar = () => {
       <Toolbar />
       <Divider />
       <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon color="primary">
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/Home">
+        <Link to="/Home">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon color="primary">
+                <AccessibilityNewIcon />
+              </ListItemIcon>
               <ListItemText primary="Dashboard" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
+            </ListItemButton>
+          </ListItem>
+        </Link>
       </List>
       <Divider />
       <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/About">
+        <Link to="/About">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <AccessibilityNewIcon />
+              </ListItemIcon>
               <ListItemText primary="About" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/Portfolio">
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to="/Portfolio">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <AccessibilityNewIcon />
+              </ListItemIcon>
               <ListItemText primary="Portfolio" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/Contact">
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to="/Contact">
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <AccessibilityNewIcon />
+              </ListItemIcon>
               <ListItemText primary="Contact  (footer)" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton disabled>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/">
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to="/">
+          <ListItem disablePadding>
+            <ListItemButton disabled>
+              <ListItemIcon>
+                <AccessibilityNewIcon />
+              </ListItemIcon>
               <ListItemText primary="Programming Languages" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton disabled>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/">
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to="/">
+          <ListItem disablePadding>
+            <ListItemButton disabled>
+              <ListItemIcon>
+                <AccessibilityNewIcon />
+              </ListItemIcon>
               <ListItemText primary="Study" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton disabled>
-            <ListItemIcon>
-              <AccessibilityNewIcon />
-            </ListItemIcon>
-            <Link to="/">
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to="/">
+          <ListItem disablePadding>
+            <ListItemButton disabled>
+              <ListItemIcon>
+                <AccessibilityNewIcon />
+              </ListItemIcon>
               <ListItemText primary="Form" />
-            </Link>
-          </ListItemButton>
-        </ListItem>
+            </ListItemButton>
+          </ListItem>
+        </Link>
       </List>
     </div>
   );
