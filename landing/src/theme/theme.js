@@ -15,6 +15,7 @@ export const theme = createTheme({
     // stroke: { main: "#121629" },
     // highlight: { main: "#eebbc3" },
   },
+  typography: { fontFamily: `'Poppins', sans-serif` },
 });
 
 // primary - used to represent primary interface elements for a user. It's the color displayed most frequently across your app's screens and components.
