@@ -27,6 +27,8 @@ Grid layout / https://www.w3schools.com/css/css_grid.asp
 
 Dark / https://mui.com/material-ui/customization/dark-mode/
 
+Mockup /  https://www.figma.com/proto/wnN1JJL6E7MCI3j4urgnO7/LandingPage-2022?node-id=78%3A2&scaling=scale-down&page-id=78%3A2&starting-point-node-id=94%3A11
+
 *************
 
 Applied routing basic excersise:
