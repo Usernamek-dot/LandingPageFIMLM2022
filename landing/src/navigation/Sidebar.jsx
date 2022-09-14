@@ -21,9 +21,13 @@ export const Sidebar = (props) => {
       />
       <Box
         component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+        sx={{
+          width: { sm: drawerWidth },
+          flexShrink: { sm: 0 },
+        }}
         aria-label="options menu"
       >
+        {/* mobile */}
         <Drawer
           container={container}
           variant="temporary"
@@ -37,11 +41,13 @@ export const Sidebar = (props) => {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              bgcolor: "primary.main",
             },
           }}
         >
           <DrawerSidebar />
         </Drawer>
+        {/* desktop */}
         <Drawer
           variant="permanent"
           sx={{
@@ -49,12 +55,12 @@ export const Sidebar = (props) => {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              bgcolor: "primary.main",
             },
           }}
           open
         >
           <DrawerSidebar />
-          {/* {drawer} */}
         </Drawer>
       </Box>
     </Box>

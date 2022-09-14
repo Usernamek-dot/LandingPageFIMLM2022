@@ -7,16 +7,14 @@ import {
   IconButton,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../assets/avatarlogo.svg";
-
 export const Navbar = ({ drawerWidth, handleDrawerToggle }) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        color="background"
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
+          bgcolor: "primary.main",
         }}
         position="fixed"
       >
@@ -33,7 +31,7 @@ export const Navbar = ({ drawerWidth, handleDrawerToggle }) => {
           <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
             Landing
           </Typography>
-          <Avatar alt="avatar" src={logo} />
+          <Avatar alt="avatar" src="/avatarlogo.svg" />
         </Toolbar>
       </AppBar>
     </Box>
