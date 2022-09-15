@@ -9,7 +9,7 @@ import {
   List,
 } from "@mui/material";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
-import { pages } from "../helpers/pages";
+import { pages } from "../../database/pages";
 
 export const DrawerSidebar = () => {
   return (
@@ -31,7 +31,7 @@ export const DrawerSidebar = () => {
       <Divider />
       <List>
         {pages.map((page) => (
-          <Link key={page} to={page.to}>
+          <Link key={page.id} to={page.to}>
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -42,68 +42,7 @@ export const DrawerSidebar = () => {
             </ListItem>
           </Link>
         ))}
-        {/* <Link to="/About">
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <AccessibilityNewIcon />
-              </ListItemIcon>
-              <ListItemText primary="About" />
-            </ListItemButton>
-          </ListItem>
-        </Link>
-        <Link to="/Portfolio">
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <AccessibilityNewIcon />
-              </ListItemIcon>
-              <ListItemText primary="Portfolio" />
-            </ListItemButton>
-          </ListItem>
-        </Link>
-        <Link to="/Contact">
-          <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <AccessibilityNewIcon />
-              </ListItemIcon>
-              <ListItemText primary="Contact  (footer)" />
-            </ListItemButton>
-          </ListItem>
-        </Link>
-        <Link to="/">
-          <ListItem disablePadding>
-            <ListItemButton disabled>
-              <ListItemIcon>
-                <AccessibilityNewIcon />
-              </ListItemIcon>
-              <ListItemText primary="Programming Languages" />
-            </ListItemButton>
-          </ListItem>
-        </Link>
-        <Link to="/">
-          <ListItem disablePadding>
-            <ListItemButton disabled>
-              <ListItemIcon>
-                <AccessibilityNewIcon />
-              </ListItemIcon>
-              <ListItemText primary="Study" />
-            </ListItemButton>
-          </ListItem>
-        </Link>
-        <Link to="/Form">
-          <ListItem disablePadding>
-            <ListItemButton disabled>
-              <ListItemIcon>
-                <AccessibilityNewIcon />
-              </ListItemIcon>
-              <ListItemText primary="Feedback" />
-            </ListItemButton>
-          </ListItem>
-        </Link> */}
       </List>
     </div>
   );
 };
-// perfil,estudios,experiencia,portafolio,contacto

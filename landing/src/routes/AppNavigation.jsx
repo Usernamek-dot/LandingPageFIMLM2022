@@ -6,7 +6,6 @@ export const AppNavigation = () => {
     <>
       <div className="App">
         <Sidebar />
-        <h1>Welcome to React Router! 👜 </h1>
         <Routes>
           <Route path="/*" element={<Home />} />
           <Route path="about" element={<About />} />
