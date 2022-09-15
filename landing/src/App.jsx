@@ -4,7 +4,6 @@ import { AppTheme } from "./theme/AppTheme";
 function App() {
   return (
     <AppTheme>
-      <CssBaseline />
       <AppNavigation />
     </AppTheme>
   );
