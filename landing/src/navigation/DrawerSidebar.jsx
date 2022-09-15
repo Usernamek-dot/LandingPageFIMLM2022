@@ -9,6 +9,7 @@ import {
   List,
 } from "@mui/material";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
+import { pages } from "../helpers/pages";
 
 export const DrawerSidebar = () => {
   return (
@@ -19,7 +20,7 @@ export const DrawerSidebar = () => {
         <Link to="/Home">
           <ListItem disablePadding>
             <ListItemButton>
-              <ListItemIcon color="primary">
+              <ListItemIcon>
                 <AccessibilityNewIcon />
               </ListItemIcon>
               <ListItemText primary="Dashboard" />
@@ -29,7 +30,19 @@ export const DrawerSidebar = () => {
       </List>
       <Divider />
       <List>
-        <Link to="/About">
+        {pages.map((page) => (
+          <Link key={page} to={page.to}>
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <AccessibilityNewIcon />
+                </ListItemIcon>
+                <ListItemText primary={page.primary} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+        ))}
+        {/* <Link to="/About">
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -88,8 +101,9 @@ export const DrawerSidebar = () => {
               <ListItemText primary="Feedback" />
             </ListItemButton>
           </ListItem>
-        </Link>
+        </Link> */}
       </List>
     </div>
   );
 };
+// perfil,estudios,experiencia,portafolio,contacto
