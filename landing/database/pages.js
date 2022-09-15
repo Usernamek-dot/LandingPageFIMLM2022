@@ -1,13 +1,13 @@
 export const pages = [
   {
     id: "1",
-    primary: "About",
-    to: "/About",
+    primary: "Languages",
+    to: "/Languages",
   },
   {
     id: "2",
-    primary: "Contact",
-    to: "/Contact",
+    primary: "Studies",
+    to: "/Studies",
   },
   {
     id: "3",
@@ -16,12 +16,7 @@ export const pages = [
   },
   {
     id: "4",
-    primary: "Studies",
-    to: "/Studies",
-  },
-  {
-    id: "5",
-    primary: "Languages",
-    to: "/Languages",
+    primary: "Contact",
+    to: "/Contact",
   },
 ];

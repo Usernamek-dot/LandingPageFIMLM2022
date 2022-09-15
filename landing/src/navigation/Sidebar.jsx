@@ -1,4 +1,4 @@
-import { Box, Drawer } from "@mui/material";
+import { Box, Drawer, Toolbar } from "@mui/material";
 import { useState } from "react";
 import { DrawerSidebar } from "./DrawerSidebar";
 import { Navbar } from "./Navbar";
@@ -41,7 +41,7 @@ export const Sidebar = (props) => {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              bgcolor: "primary.main",
+              // bgcolor: "primary.contrast",
             },
           }}
         >
@@ -55,7 +55,6 @@ export const Sidebar = (props) => {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              bgcolor: "primary.main",
             },
           }}
           open
@@ -63,6 +62,8 @@ export const Sidebar = (props) => {
           <DrawerSidebar />
         </Drawer>
       </Box>
+
+      {/* views come here */}
     </Box>
   );
 };

@@ -5,8 +5,13 @@ import {
   CardContent,
   Box,
   Avatar,
+  AccordionSummary,
+  Accordion,
+  AccordionDetails,
 } from "@mui/material";
 import "animate.css";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { quotes } from "../../../database/quotes";
 
 export const Home = () => {
   return (
@@ -26,7 +31,7 @@ export const Home = () => {
         justifyContent="center"
         columns={16}
       >
-        <Grid sx={{ mt: 6 }} item xs={12} md={8}>
+        <Grid sx={{ mt: 6 }} item sm={12} xs={12} md={8}>
           <Card sx={{ height: "60vh" }}>
             <CardContent align="justify">
               <Typography
@@ -56,6 +61,27 @@ export const Home = () => {
           />
         </Grid>
       </Grid>
+      <Box
+        component="main"
+        sx={{
+          flexGrow: 1,
+          p: 7,
+        }}
+      >
+        {quotes.map((quote) => (
+          <Accordion key={quote.id} sx={{ mt: 6 }} item xs={12} md={6} lg={12}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="accordion of quotes"
+            >
+              <Typography>{quote.title}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>{quote.description}</Typography>
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </Box>
     </Box>
   );
 };

@@ -14,7 +14,6 @@ export const Navbar = ({ drawerWidth, handleDrawerToggle }) => {
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
-          bgcolor: "primary.main",
         }}
         position="fixed"
       >

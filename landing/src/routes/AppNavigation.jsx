@@ -1,6 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import { Sidebar } from "../navigation/Sidebar";
-import { Contact, Home, About, Portfolio } from "../page/exports";
+import {
+  Contact,
+  Home,
+  About,
+  Portfolio,
+  Studies,
+  Languages,
+} from "../page/exports";
 export const AppNavigation = () => {
   return (
     <>
@@ -11,6 +18,8 @@ export const AppNavigation = () => {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="portfolio" element={<Portfolio />} />
+          <Route path="studies" element={<Studies />} />
+          <Route path="languages" element={<Languages />} />
         </Routes>
       </div>
     </>
