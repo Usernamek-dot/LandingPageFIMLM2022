@@ -69,7 +69,7 @@ export const Home = () => {
         }}
       >
         {quotes.map((quote) => (
-          <Accordion key={quote.id} sx={{ mt: 6 }} item xs={12} md={6} lg={12}>
+          <Accordion key={quote.id} sx={{ mt: 6 }} xs={12} md={6} lg={12}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="accordion of quotes"

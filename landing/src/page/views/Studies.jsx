@@ -1,9 +1,20 @@
-import { Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
+import { SwipableStepper } from "../components/SwipableStepper";
 
 export const Studies = () => {
   return (
-    <Typography sx={{ ml: 40 }} variant="h1">
-      Studies
-    </Typography>
+    <Box
+      component="main"
+      sx={{
+        flexGrow: 1,
+        p: 10,
+        ml: { sm: "75vh" },
+      }}
+    >
+      <Typography sx={{ ml: "95vh" }} variant="h6">
+        Studies
+      </Typography>
+      <SwipableStepper />
+    </Box>
   );
 };
