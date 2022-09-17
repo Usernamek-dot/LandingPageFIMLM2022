@@ -11,7 +11,6 @@ import {
   Avatar,
 } from "@mui/material";
 import { useState } from "react";
-import { studies } from "../../../database/studies";
 import { ExpandMore } from "@mui/icons-material";
 
 const ExpandingMore = styled((props) => {
@@ -25,7 +24,13 @@ const ExpandingMore = styled((props) => {
   }),
 }));
 
-export const StudiesCard = () => {
+export const StudiesCard = ({
+  title,
+  date,
+  image,
+  description,
+  aditionalContent,
+}) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleExpandClick = () => {
@@ -33,45 +38,34 @@ export const StudiesCard = () => {
   };
 
   return (
-    <>
-      {studies.map((study) => {
-        return (
-          <Card key={study.id}>
-            <CardHeader
-              justifycontent="between"
-              avatar={<Avatar aria-label="avatar">E</Avatar>}
-              title={study.title}
-              subheader={study.date}
-            />
-            <CardMedia
-              component="img"
-              height="194"
-              image={study.image}
-              alt={study.title}
-            />
-            <CardContent>
-              <Typography variant="body2" color="text.secondary">
-                {study.description}
-              </Typography>
-            </CardContent>
-            <CardActions disableSpacing>
-              <ExpandingMore
-                expand={expanded}
-                onClick={handleExpandClick}
-                aria-expanded={expanded}
-                aria-label="show more"
-              >
-                <ExpandMore />
-              </ExpandingMore>
-            </CardActions>
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
-              <CardContent>
-                <Typography paragraph>{study.aditionalContent}</Typography>
-              </CardContent>
-            </Collapse>
-          </Card>
-        );
-      })}
-    </>
+    <Card>
+      <CardHeader
+        justifycontent="between"
+        avatar={<Avatar aria-label="avatar">E</Avatar>}
+        title={title}
+        subheader={date}
+      />
+      <CardMedia component="img" height="194" image={image} alt={title} />
+      <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          {description}
+        </Typography>
+      </CardContent>
+      <CardActions disableSpacing>
+        <ExpandingMore
+          expand={expanded}
+          onClick={handleExpandClick}
+          aria-expanded={expanded}
+          aria-label="show more"
+        >
+          <ExpandMore />
+        </ExpandingMore>
+      </CardActions>
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <CardContent>
+          <Typography paragraph>{aditionalContent}</Typography>
+        </CardContent>
+      </Collapse>
+    </Card>
   );
 };
