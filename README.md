@@ -19,6 +19,7 @@ Studies
 
 Resources:
 
+Website / https://landing-cb41a.web.app
 React router / https://reactrouter.com/en/main/getting-started/installation
 
 Pallete /  https://www.happyhues.co/palettes/12
