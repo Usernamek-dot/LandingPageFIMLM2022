@@ -14,8 +14,6 @@ import { pages } from "../../database/pages";
 export const DrawerSidebar = () => {
   return (
     <div>
-      <Toolbar />
-      <Divider />
       <List>
         <Link to="/Home">
           <ListItem disablePadding>
