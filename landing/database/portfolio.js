@@ -17,20 +17,30 @@ export const projects = [
     githubLink: "https://github.com/Usernamek-dot/heroesAppFIMLM2022",
     websiteLink: "https://super-hero-fimlm.netlify.app",
   },
-  //   {
-  //     id: "",
-  //     title: "Weather App",
-  //     description: "",
-  //     img: "",
-  //     githubLink: "",
-  //     websiteLink: "",
-  //   },
-  //   {
-  //     id: "",
-  //     title: "Box App",
-  //     description: "",
-  //     img: "",
-  //     githubLink: "",
-  //     websiteLink: "",
-  //   },
+  {
+    id: "3",
+    title: "Weather App",
+    description:
+      "This is a weather app with conection to fake weather api. Based on ReactJS course 2022.",
+    img: "weatherapp.svg",
+    githubLink: "https://github.com/Usernamek-dot/weatherFIMLM2022",
+    websiteLink: "https://weather-app-fimlm.netlify.app/",
+  },
+  {
+    id: "4",
+    title: "Box App",
+    description:
+      "This is a box app showing up written info at the same time is typed on the box.",
+    img: "boxmessage.svg",
+    githubLink: "https://github.com/Usernamek-dot/boxMessageFIMLM2022",
+    websiteLink: "https://box-fimlm.netlify.app/",
+  },
+  {
+    id: "5",
+    title: "Hangman app",
+    description: "This is a hangman game from Reactjs",
+    img: "hangman.svg",
+    githubLink: "https://github.com/Usernamek-dot/hangmanFIMLM2022",
+    websiteLink: "https://hangman-fimlm.netlify.app/",
+  },
 ];

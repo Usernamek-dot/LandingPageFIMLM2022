@@ -36,42 +36,40 @@ export const StudiesCard = () => {
     <>
       {studies.map((study) => {
         return (
-          <div key={study.id}>
-            <Card>
-              <CardHeader
-                justifycontent="between"
-                avatar={<Avatar aria-label="avatar">E</Avatar>}
-                title={study.title}
-                subheader={study.date}
-              />
-              <CardMedia
-                component="img"
-                height="194"
-                image={study.image}
-                alt={study.title}
-              />
+          <Card key={study.id}>
+            <CardHeader
+              justifycontent="between"
+              avatar={<Avatar aria-label="avatar">E</Avatar>}
+              title={study.title}
+              subheader={study.date}
+            />
+            <CardMedia
+              component="img"
+              height="194"
+              image={study.image}
+              alt={study.title}
+            />
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">
+                {study.description}
+              </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+              <ExpandingMore
+                expand={expanded}
+                onClick={handleExpandClick}
+                aria-expanded={expanded}
+                aria-label="show more"
+              >
+                <ExpandMore />
+              </ExpandingMore>
+            </CardActions>
+            <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
-                <Typography variant="body2" color="text.secondary">
-                  {study.description}
-                </Typography>
+                <Typography paragraph>{study.aditionalContent}</Typography>
               </CardContent>
-              <CardActions disableSpacing>
-                <ExpandingMore
-                  expand={expanded}
-                  onClick={handleExpandClick}
-                  aria-expanded={expanded}
-                  aria-label="show more"
-                >
-                  <ExpandMore />
-                </ExpandingMore>
-              </CardActions>
-              <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                  <Typography paragraph>{study.aditionalContent}</Typography>
-                </CardContent>
-              </Collapse>
-            </Card>
-          </div>
+            </Collapse>
+          </Card>
         );
       })}
     </>
