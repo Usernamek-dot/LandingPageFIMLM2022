@@ -15,9 +15,10 @@ export const Portfolio = () => {
     <Box
       component="main"
       sx={{
+        width: "75%",
         flexGrow: 1,
-        p: 10,
-        ml: { sm: "50vh" },
+        p: 8,
+        ml: { sm: "40vh" },
       }}
     >
       <Typography sx={{ ml: "95vh" }} variant="h6">
@@ -35,9 +36,7 @@ export const Portfolio = () => {
           xl={3}
         >
           <Card sx={{ display: "flex" }}>
-            <Box
-              sx={{ width: "60%", display: "flex", flexDirection: "column" }}
-            >
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
               <CardContent sx={{ mt: 6, flex: "1 0 auto" }}>
                 <Typography component="div" variant="h5">
                   {project.title}
