@@ -1,28 +1,18 @@
-import { Grid, Typography } from "@mui/material";
-import { Container } from "@mui/system";
-
 export const Footer = () => {
   return (
-    <>
-      <Typography variant="h4">
-        Landing Page &reg; {new Date().getFullYear}{" "}
-      </Typography>
-      <footer>
-        <Container p={{ xs: 3, sm: 10 }} bgcolor="secondary" maxWidth="lg">
-          <Grid
-            item
-            pb={{ xs: 5, sm: 0 }}
-            pt={{ xs: 5, sm: 10 }}
-            xs={12}
-            sm={4}
-            sx={{ textAlign: "center", borderBottom: 1 }}
-          >
-            <Typography>
-              Landing Page &reg; {new Date().getFullYear}{" "}
-            </Typography>
-          </Grid>
-        </Container>
-      </footer>
-    </>
+    <footer className="bg-gray-200 text-center lg:text-left">
+      <div
+        className="text-gray-700 text-center p-4"
+        sx={{ bgcolor: "rgba(0, 0, 0, 0.2)" }}
+      >
+        © {new Date().getFullYear()} Copyright:
+        <a
+          className="text-gray-800"
+          href="https://github.com/Usernamek-dot/LandingPageFIMLM2022"
+        >
+          Landing Page
+        </a>
+      </div>
+    </footer>
   );
 };

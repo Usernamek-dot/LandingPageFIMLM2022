@@ -20,7 +20,6 @@ export const Layout = (props) => {
         drawerWidth={drawerWidth}
         handleDrawerToggle={handleDrawerToggle}
       />
-
       <Box
         component="nav"
         sx={{
@@ -63,7 +62,6 @@ export const Layout = (props) => {
           <DrawerSidebar />
         </Drawer>
       </Box>
-      {/* <Footer /> */}
     </Box>
   );
 };
