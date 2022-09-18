@@ -5,10 +5,9 @@ import {
   Toolbar,
   Typography,
   IconButton,
-  Tooltip,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Delete, Download, GitHub, Mail, WhatsApp } from "@mui/icons-material";
+import { SocialMedia } from "./components/SocialMedia";
 
 export const Navbar = ({ drawerWidth, handleDrawerToggle }) => {
   return (
@@ -34,22 +33,7 @@ export const Navbar = ({ drawerWidth, handleDrawerToggle }) => {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Landing
             </Typography>
-            <Box sx={{ mr: 10 }}>
-              <IconButton aria-label="whatsapp">
-                <WhatsApp />
-              </IconButton>
-              <IconButton aria-label="github">
-                <GitHub />
-              </IconButton>
-              <IconButton aria-label="mail">
-                <Mail />
-              </IconButton>
-              <Tooltip title="Download CV">
-                <IconButton aria-label="dowload">
-                  <Download />
-                </IconButton>
-              </Tooltip>
-            </Box>
+            <SocialMedia />
             <Avatar alt="avatar" src="/avatarlogo.svg" />
           </Toolbar>
         </AppBar>

@@ -6,10 +6,9 @@ import {
   ListItemButton,
   ListItem,
   List,
-  Box,
 } from "@mui/material";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
-import { pages } from "../../database/pages";
+import { pages } from "../../../database/pages";
 
 export const DrawerSidebar = () => {
   return (

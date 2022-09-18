@@ -10,7 +10,7 @@ export const Footer = () => {
           className="text-gray-800"
           href="https://github.com/Usernamek-dot/LandingPageFIMLM2022"
         >
-          Landing Page
+          Landing Page | by kypacheco07@misena.edu.co
         </a>
       </div>
     </footer>

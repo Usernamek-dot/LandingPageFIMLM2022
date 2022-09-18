@@ -1,7 +1,6 @@
 import { Box, Drawer } from "@mui/material";
 import { useState } from "react";
-import { DrawerSidebar } from "./DrawerSidebar";
-import { Footer } from "./Footer";
+import { DrawerSidebar } from "./components/DrawerSidebar";
 import { Navbar } from "./Navbar";
 
 export const Layout = (props) => {
