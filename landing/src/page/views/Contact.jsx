@@ -3,7 +3,7 @@ import { Button, Typography } from "@mui/material";
 export const Contact = () => {
   return (
     <>
-      <Typography color="secondary" sx={{ ml: 40 }} variant="h1">
+      <Typography m={5} textAlign="center" variant="h5">
         Contact
       </Typography>
       <Typography color="warning" sx={{ ml: 40 }} variant="p">

@@ -1,9 +1,10 @@
-import { Box, Drawer, Toolbar } from "@mui/material";
+import { Box, Drawer } from "@mui/material";
 import { useState } from "react";
 import { DrawerSidebar } from "./DrawerSidebar";
+import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
-export const Sidebar = (props) => {
+export const Layout = (props) => {
   const drawerWidth = 240;
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -19,6 +20,7 @@ export const Sidebar = (props) => {
         drawerWidth={drawerWidth}
         handleDrawerToggle={handleDrawerToggle}
       />
+
       <Box
         component="nav"
         sx={{
@@ -41,7 +43,6 @@ export const Sidebar = (props) => {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
-              // bgcolor: "primary.contrast",
             },
           }}
         >
@@ -62,8 +63,7 @@ export const Sidebar = (props) => {
           <DrawerSidebar />
         </Drawer>
       </Box>
-
-      {/* views come here */}
+      {/* <Footer /> */}
     </Box>
   );
 };

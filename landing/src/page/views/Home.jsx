@@ -23,6 +23,9 @@ export const Home = () => {
         ml: { sm: "30vh" },
       }}
     >
+      <Typography m={5} textAlign="center" variant="h5">
+        Home
+      </Typography>
       <Grid
         display="flex"
         container

@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 import {
   Divider,
-  Toolbar,
   ListItemText,
   ListItemIcon,
   ListItemButton,
   ListItem,
   List,
+  Box,
 } from "@mui/material";
 import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 import { pages } from "../../database/pages";
 
 export const DrawerSidebar = () => {
   return (
-    <div>
+    <>
       <List>
         <Link to="/Home">
           <ListItem disablePadding>
@@ -41,6 +41,6 @@ export const DrawerSidebar = () => {
           </Link>
         ))}
       </List>
-    </div>
+    </>
   );
 };

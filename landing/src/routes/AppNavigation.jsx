@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import { Sidebar } from "../navigation/Sidebar";
+import { Layout } from "../common/Layout";
 import { Contact, Home, Portfolio, Studies, Languages } from "../page/exports";
 export const AppNavigation = () => {
   return (
     <>
       <div className="App">
-        <Sidebar />
+        <Layout />
         <Routes>
           <Route path="/*" element={<Home />} />
           <Route path="contact" element={<Contact />} />

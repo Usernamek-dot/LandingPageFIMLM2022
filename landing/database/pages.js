@@ -20,3 +20,10 @@ export const pages = [
     to: "/Contact",
   },
 ];
+
+export const titlePages = [
+  { id: "1", title: "Home" },
+  { id: "2", title: "Languages" },
+  { id: "3", title: "Studies" },
+  { id: "4", title: "Portfolio" },
+];

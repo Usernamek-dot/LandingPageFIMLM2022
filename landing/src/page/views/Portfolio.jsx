@@ -21,7 +21,7 @@ export const Portfolio = () => {
         ml: { sm: "40vh" },
       }}
     >
-      <Typography sx={{ ml: "95vh" }} variant="h6">
+      <Typography m={5} textAlign="center" variant="h5">
         Portfolio
       </Typography>
       {projects.map((project) => (
