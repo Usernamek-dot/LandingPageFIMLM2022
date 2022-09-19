@@ -19,7 +19,7 @@ export const Home = () => {
       sx={{
         flexGrow: 1,
         p: 10,
-        ml: { sm: "30vh" },
+        ml: { sm: "40vh" },
       }}
     >
       <Typography m={5} textAlign="center" variant="h5">

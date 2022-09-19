@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import { Footer } from "../common/Footer";
-import { Layout } from "../common/Layout";
+import { NotFound } from "../auth/NotFound";
+import { Footer, Layout } from "../common/exports";
 import { Contact, Home, Portfolio, Studies, Languages } from "../page/exports";
 export const AppNavigation = () => {
   return (
@@ -13,6 +13,7 @@ export const AppNavigation = () => {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="studies" element={<Studies />} />
           <Route path="languages" element={<Languages />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
