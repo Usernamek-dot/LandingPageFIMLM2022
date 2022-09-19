@@ -17,10 +17,10 @@ const bull = (
 
 export const ExperienceCard = () => {
   return (
-    <Card sx={{ mt: 5 }}>
+    <Card sx={{ mt: 5, boxShadow: 3 }}>
       <CardActionArea>
         <CardContent>
-          <Typography variant="h4" component="div">
+          <Typography color="primary.dark" variant="h4" component="div">
             Experience
           </Typography>
           <Typography sx={{ mt: 2, mb: 1.5 }} color="text.secondary">

@@ -30,7 +30,7 @@ export const DrawerSidebar = () => {
         <Link to="/Home">
           <ListItem disablePadding>
             <ListItemButton onClick={handleLoader}>
-              <ListItemIcon>
+              <ListItemIcon sx={{ color: "primary.dark" }}>
                 <AccessibilityNewIcon />
               </ListItemIcon>
               <ListItemText primary="Dashboard" />
@@ -44,7 +44,7 @@ export const DrawerSidebar = () => {
           <Link key={page.id} to={page.to}>
             <ListItem disablePadding>
               <ListItemButton onClick={handleLoader}>
-                <ListItemIcon>
+                <ListItemIcon sx={{ color: "primary.dark" }}>
                   <AccessibilityNewIcon />
                 </ListItemIcon>
                 <ListItemText primary={page.primary} />

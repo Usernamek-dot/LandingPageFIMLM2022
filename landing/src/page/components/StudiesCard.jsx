@@ -41,7 +41,11 @@ export const StudiesCard = ({
     <Card>
       <CardHeader
         justifycontent="between"
-        avatar={<Avatar aria-label="avatar">E</Avatar>}
+        avatar={
+          <Avatar sx={{ bgcolor: "primary.main" }} aria-label="avatar">
+            E
+          </Avatar>
+        }
         title={title}
         subheader={date}
       />
@@ -57,6 +61,7 @@ export const StudiesCard = ({
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
+          color="primary"
         >
           <ExpandMore />
         </ExpandingMore>

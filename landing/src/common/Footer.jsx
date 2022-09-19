@@ -1,6 +1,9 @@
+import { Divider } from "@mui/material";
+
 export const Footer = () => {
   return (
-    <footer className="bg-gray-200 text-center lg:text-left">
+    <footer className=" text-center lg:text-left">
+      <Divider />
       <div
         className="text-gray-700 text-center p-4"
         sx={{ bgcolor: "rgba(0, 0, 0, 0.2)" }}

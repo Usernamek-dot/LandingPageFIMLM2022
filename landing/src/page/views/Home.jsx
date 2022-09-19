@@ -52,10 +52,10 @@ export const Home = () => {
 
           <CardContent>
             <Typography
-              color="secondary.main"
+              color="primary.dark"
               gutterBottom
               component="div"
-              variant="h5"
+              variant="h4"
             >
               Let's dive in !
             </Typography>

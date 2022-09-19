@@ -20,7 +20,7 @@ export const Languages = () => {
           {languages.map((language) => (
             <Grid key={language.id} item xs={12} sm={6} md={6} lg={3} xl={3}>
               <Card elevation={0} xs={12}>
-                <Typography color="secondary.main" variant="p">
+                <Typography color="text.secondary" variant="p">
                   {language.alt}
                 </Typography>
 

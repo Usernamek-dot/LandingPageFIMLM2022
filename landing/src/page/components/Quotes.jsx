@@ -26,7 +26,7 @@ export const Quotes = () => {
             <Typography>{quote.title}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{quote.description}</Typography>
+            <Typography color="text.secondary">{quote.description}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}
