@@ -16,8 +16,8 @@ export const pages = [
   },
   {
     id: "4",
-    primary: "Contact",
-    to: "/Contact",
+    primary: "Feedback",
+    to: "/Feedback",
   },
 ];
 

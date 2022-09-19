@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { NotFound } from "../auth/NotFound";
 import { Footer, Layout } from "../common/exports";
-import { Contact, Home, Portfolio, Studies, Languages } from "../page/exports";
+import { Feedback, Home, Portfolio, Studies, Languages } from "../page/exports";
 export const AppNavigation = () => {
   return (
     <>
@@ -9,7 +9,7 @@ export const AppNavigation = () => {
         <Layout />
         <Routes>
           <Route path="/*" element={<Home />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="feedback" element={<Feedback />} />
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="studies" element={<Studies />} />
           <Route path="languages" element={<Languages />} />
