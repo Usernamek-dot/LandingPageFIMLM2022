@@ -1,13 +1,5 @@
 import { GitHub, WebAsset } from "@mui/icons-material";
-import {
-  Box,
-  CardMedia,
-  Typography,
-  Grid,
-  Card,
-  CardContent,
-  Button,
-} from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import { projects } from "../../../database/portfolio";
 
 export const Portfolio = () => {
@@ -25,32 +17,26 @@ export const Portfolio = () => {
         Portfolio
       </Typography>
       {projects.map((project) => (
-        <Grid
-          sx={{ mb: 5 }}
+        <div
           key={project.id}
-          item
-          xs={12}
-          sm={6}
-          md={6}
-          lg={3}
-          xl={3}
+          className="mb-7 max-w-md mx-auto  rounded-xl shadow-md overflow-hidden md:max-w-2xl"
         >
-          <Card sx={{ display: "flex" }}>
-            <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <CardContent sx={{ mt: 6, flex: "1 0 auto" }}>
-                <Typography component="div" variant="h5">
-                  {project.title}
-                </Typography>
-                <Typography
-                  variant="subtitle1"
-                  color="text.secondary"
-                  component="div"
-                >
-                  {project.description}
-                </Typography>
-              </CardContent>
-              <Box sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}>
+          <div className="md:flex ">
+            <div className="md:shrink-0">
+              <img
+                className="h-48 w-full object-cover md:h-full md:w-48"
+                src={project.img}
+                alt="Man looking at item at a store"
+              />
+            </div>
+            <div className="p-8">
+              <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                {project.title}
+              </div>
+              <p className="mt-2 text-slate-500"> {project.description}</p>
+              <div className="block mt-1 text-lg leading-tight font-medium text-black hover:underline focus:outline-none">
                 <Button
+                  role="button"
                   target="_blank"
                   href={project.githubLink}
                   variant="link"
@@ -66,17 +52,10 @@ export const Portfolio = () => {
                 >
                   Website
                 </Button>
-              </Box>
-            </Box>
-
-            <CardMedia
-              height="147"
-              component="img"
-              image={project.img}
-              alt="project picture"
-            />
-          </Card>
-        </Grid>
+              </div>
+            </div>
+          </div>
+        </div>
       ))}
     </Box>
   );

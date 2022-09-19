@@ -23,6 +23,7 @@ export const Languages = () => {
                 <Typography color="secondary.main" variant="p">
                   {language.alt}
                 </Typography>
+
                 <CardMedia
                   sx={{ height: 250, width: "100%" }}
                   component="img"

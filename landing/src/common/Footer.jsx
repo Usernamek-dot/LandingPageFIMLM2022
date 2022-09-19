@@ -5,13 +5,14 @@ export const Footer = () => {
         className="text-gray-700 text-center p-4"
         sx={{ bgcolor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © {new Date().getFullYear()} Copyright:
+        © {new Date().getFullYear()} Copyright{" "}
         <a
           className="text-gray-800"
           href="https://github.com/Usernamek-dot/LandingPageFIMLM2022"
         >
-          Landing Page | by kypacheco07@misena.edu.co
-        </a>
+          Landing Page
+        </a>{" "}
+        | by kypacheco07@misena.edu.co
       </div>
     </footer>
   );

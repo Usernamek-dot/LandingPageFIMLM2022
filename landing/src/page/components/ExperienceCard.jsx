@@ -1,4 +1,10 @@
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardActionArea,
+  CardContent,
+  Typography,
+} from "@mui/material";
 
 const bull = (
   <Box
@@ -11,24 +17,26 @@ const bull = (
 
 export const ExperienceCard = () => {
   return (
-    <Card sx={{ p: 4, mt: 5, minWidth: 275 }}>
-      <CardContent>
-        <Typography variant="h4" component="div">
-          Experiences
-        </Typography>
-        <Typography sx={{ mt: 2, mb: 1.5 }} color="text.secondary">
-          {bull} I had worked with PHP crud and HTML with CSS frontend.
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          {bull} I have practiced jquery and javascript doing small exercises
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          {bull} I have participated in Codevita 2020 challenge.
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          {bull} I have made 3 team projects in my life.
-        </Typography>
-      </CardContent>
+    <Card sx={{ mt: 5 }}>
+      <CardActionArea>
+        <CardContent>
+          <Typography variant="h4" component="div">
+            Experience
+          </Typography>
+          <Typography sx={{ mt: 2, mb: 1.5 }} color="text.secondary">
+            {bull} I had worked with PHP crud and HTML with CSS frontend.
+          </Typography>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            {bull} I have practiced jquery and javascript doing small exercises
+          </Typography>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            {bull} I have participated in Codevita 2020 challenge.
+          </Typography>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            {bull} I have made 3 team projects in my life.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
     </Card>
   );
 };

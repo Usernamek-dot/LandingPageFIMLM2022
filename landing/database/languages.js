@@ -29,4 +29,14 @@ export const languages = [
     image: "tailwindcsslogo.svg",
     alt: "TAILWIND",
   },
+  {
+    id: "7",
+    image: "jslogo.svg",
+    alt: "JAVASCRIPT",
+  },
+  {
+    id: "8",
+    image: "tslogo.svg",
+    alt: "TYPESCRIPT",
+  },
 ];

@@ -18,7 +18,7 @@ export const SwipableStepper = () => {
     setActiveStep(step);
   };
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ boxShadow: 3, flexGrow: 1 }}>
       <StudiesCard
         date={studies[activeStep].date}
         image={studies[activeStep].image}

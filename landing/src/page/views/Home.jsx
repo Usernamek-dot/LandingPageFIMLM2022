@@ -5,6 +5,8 @@ import {
   CardContent,
   Box,
   Avatar,
+  CardMedia,
+  CardActionArea,
 } from "@mui/material";
 import "animate.css";
 import { ExperienceCard } from "../components/ExperienceCard";
@@ -23,44 +25,49 @@ export const Home = () => {
       <Typography m={5} textAlign="center" variant="h5">
         Home
       </Typography>
-      <Grid
-        display="flex"
-        container
-        spacing={2}
-        alignItems="center"
-        justifyContent="center"
-        columns={16}
+      <Card
+        sx={{
+          mt: 6,
+          boxShadow: 3,
+        }}
+        align="center"
       >
-        <Grid sx={{ mt: 6 }} item sm={12} xs={12} md={8}>
-          <Card sx={{ height: "60vh" }}>
-            <CardContent align="justify">
-              <Typography
-                sx={{ mt: 6 }}
-                color="secondary.main"
-                gutterBottom
-                variant="h4"
-                component="div"
-              >
-                Let's dive in !
-              </Typography>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                This is my landing page.
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                I am a developer student focused in Front-end.
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-        <Grid sx={{ mt: 6 }} item xs={12} md={6}>
-          <Avatar
-            className="animate__slow animate__animated animate__bounce"
-            sx={{ width: "56vh", height: "56vh" }}
-            alt="avatar"
-            src="/avatarlogo.svg"
-          />
-        </Grid>
-      </Grid>
+        <CardActionArea
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", lg: "row", md: "row" },
+          }}
+        >
+          <CardMedia sx={{ mb: 6 }}>
+            <Avatar
+              className="animate__slow animate__animated animate__bounce"
+              sx={{
+                width: "26vh",
+                height: "26vh",
+              }}
+              alt="avatar"
+              src="/avatarlogo.svg"
+            />
+          </CardMedia>
+
+          <CardContent>
+            <Typography
+              color="secondary.main"
+              gutterBottom
+              component="div"
+              variant="h5"
+            >
+              Let's dive in !
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              This is my landing page.
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              I am a developer student focused in Front-end.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
       <ExperienceCard />
       <Quotes />
     </Box>
