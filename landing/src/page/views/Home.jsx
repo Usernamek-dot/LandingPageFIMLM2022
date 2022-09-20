@@ -44,6 +44,7 @@ export const Home = () => {
               sx={{
                 width: "26vh",
                 height: "26vh",
+                mt: 2,
               }}
               alt="avatar"
               src="/avatarlogo.svg"

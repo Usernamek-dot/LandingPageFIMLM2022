@@ -22,7 +22,7 @@ export const Form = () => {
         <div className="mb-6">
           <label
             for="feedback"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            className="block mb-2 text-sm font-medium dark:text-gray-700"
           >
             Your feedback
           </label>
