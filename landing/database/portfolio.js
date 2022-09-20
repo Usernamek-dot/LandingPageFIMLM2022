@@ -41,6 +41,6 @@ export const projects = [
     description: "This is a hangman game from Reactjs",
     img: "hangman.jpg",
     githubLink: "https://github.com/Usernamek-dot/hangmanFIMLM2022",
-    websiteLink: "https://hangman-fimlm.netlify.app/",
+    websiteLink: "https://hangmanny.netlify.app/",
   },
 ];
