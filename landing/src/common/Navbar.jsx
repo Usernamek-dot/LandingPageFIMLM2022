@@ -34,7 +34,7 @@ export const Navbar = ({ drawerWidth, handleDrawerToggle }) => {
               Landing
             </Typography>
             <SocialMedia />
-            <Avatar alt="avatar" src="/avatarlogo.svg" />
+            <Avatar sx={{ ml: 4 }} alt="avatar" src="/avatarlogo.svg" />
           </Toolbar>
         </AppBar>
       </Box>
