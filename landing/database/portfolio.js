@@ -5,7 +5,7 @@ export const projects = [
     description:
       "This is a kaban app created with reactjs course. We worked the CRUD functionality on the app.",
     img: "kanban.jpg",
-    githubLink: "https://github.com/Usernamek-dot/todoFIMLM2022",
+    githubLink: "https://github.com/Usernamek-dot/todo2022",
     websiteLink: "https://kanbanapp6.netlify.app/",
   },
   {
@@ -40,7 +40,7 @@ export const projects = [
     title: "Hangman app",
     description: "This is a hangman game from Reactjs",
     img: "hangman.jpg",
-    githubLink: "https://github.com/Usernamek-dot/hangmanFIMLM2022",
+    githubLink: "https://github.com/Usernamek-dot/hangman2022",
     websiteLink: "https://hangmanny.netlify.app/",
   },
 ];
