@@ -23,6 +23,7 @@ export const Languages = () => {
                 </Typography>
 
                 <CardMedia
+                  className="animate__animated animate__heartBeat "
                   sx={{ height: 250, width: "100%" }}
                   component="img"
                   image={language.image}
