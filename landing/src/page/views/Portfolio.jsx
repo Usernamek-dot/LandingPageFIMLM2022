@@ -1,5 +1,12 @@
 import { GitHub, WebAsset } from "@mui/icons-material";
-import { Box, Typography, Button, Card } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Button,
+  Card,
+  CardContent,
+  CardActions,
+} from "@mui/material";
 import { projects } from "../../../database/portfolio";
 import { TitlePage } from "../../common/components/TitlePage";
 
@@ -11,31 +18,44 @@ export const Portfolio = () => {
         width: "75%",
         flexGrow: 1,
         p: 8,
-        ml: { sm: "40vh" },
+        ml: { sm: "45vh" },
       }}
     >
       <TitlePage title="Portfolio" />
       {projects.map((project) => (
         <Card
           key={project.id}
-          className="shadow[#f5f6fa]  shadow-lg shadow-md
-          mb-7 max-w-md mx-auto  rounded-xl overflow-hidden md:max-w-2xl"
+          sx={{ boxShadow: 3 }}
+          className=" 
+          mb-7  mx-auto  rounded-xl overflow-hidden md:max-w-2xl "
         >
-          <div className="md:flex ">
-            <div className="md:shrink-0">
+          <Box className="md:flex  ">
+            <Box className="md:shrink-0">
               <img
-                className="h-48 w-full object-cover md:h-full md:w-48"
+                className=" md:h-full md:w-48 h-96 w-full object-cover "
                 src={project.img}
-                alt="Man looking at item at a store"
+                alt="project photo"
               />
-            </div>
-            <div className="p-8">
-              <div className=" uppercase tracking-wide text-sm font-semibold">
-                {project.title}
-              </div>
-              <p className="mt-2 text-slate-500"> {project.description}</p>
-              <div className="block mt-1 text-lg leading-tight font-medium text-black hover:underline focus:outline-none p-3 ">
+            </Box>
+            <Box p={1}>
+              <CardContent>
+                <Typography
+                  className=" uppercase tracking-wide text-sm font-semibold"
+                  color="primary"
+                >
+                  {project.title}
+                </Typography>
+                <Typography
+                  sx={{ mt: 3 }}
+                  variant="body2"
+                  color="text.secondary"
+                >
+                  {project.description}
+                </Typography>
+              </CardContent>
+              <CardActions>
                 <Button
+                  size="small"
                   role="button"
                   target="_blank"
                   href={project.githubLink}
@@ -54,9 +74,9 @@ export const Portfolio = () => {
                 >
                   Website
                 </Button>
-              </div>
-            </div>
-          </div>
+              </CardActions>
+            </Box>
+          </Box>
         </Card>
       ))}
     </Box>
