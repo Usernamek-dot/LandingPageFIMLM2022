@@ -11,7 +11,7 @@ export const Feedback = () => {
         ml: { sm: "40vh" },
       }}
     >
-      <Typography m={5} textAlign="center" variant="h5">
+      <Typography color="primary" m={5} textAlign="center" variant="h5">
         Feedback form
       </Typography>
       <Form />

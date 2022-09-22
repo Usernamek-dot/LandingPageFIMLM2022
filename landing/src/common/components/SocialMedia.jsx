@@ -8,7 +8,7 @@ export const SocialMedia = () => {
         <Box key={Icon.id}>
           <Tooltip title={Icon.tooltip}>
             <IconButton
-              color="primary"
+              color="secondary"
               href={Icon.href}
               aria-label={Icon.arialabel}
             >

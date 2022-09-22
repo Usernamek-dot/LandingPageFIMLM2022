@@ -1,5 +1,5 @@
 import { GitHub, WebAsset } from "@mui/icons-material";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography, Button, Card } from "@mui/material";
 import { projects } from "../../../database/portfolio";
 
 export const Portfolio = () => {
@@ -13,11 +13,11 @@ export const Portfolio = () => {
         ml: { sm: "40vh" },
       }}
     >
-      <Typography m={5} textAlign="center" variant="h5">
+      <Typography color="primary" m={5} textAlign="center" variant="h5">
         Portfolio
       </Typography>
       {projects.map((project) => (
-        <div
+        <Card
           key={project.id}
           className="shadow[#f5f6fa]  shadow-lg shadow-md
           mb-7 max-w-md mx-auto  rounded-xl overflow-hidden md:max-w-2xl"
@@ -42,7 +42,7 @@ export const Portfolio = () => {
                   href={project.githubLink}
                   variant="link"
                   startIcon={<GitHub />}
-                  sx={{ bgcolor: "primary.dark" }}
+                  sx={{ bgcolor: "secondary.light" }}
                 >
                   GitHub
                 </Button>
@@ -51,14 +51,14 @@ export const Portfolio = () => {
                   href={project.websiteLink}
                   variant="link"
                   startIcon={<WebAsset />}
-                  sx={{ bgcolor: "primary.dark" }}
+                  sx={{ bgcolor: "secondary.light" }}
                 >
                   Website
                 </Button>
               </div>
             </div>
           </div>
-        </div>
+        </Card>
       ))}
     </Box>
   );

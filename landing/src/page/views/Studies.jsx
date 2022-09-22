@@ -11,7 +11,7 @@ export const Studies = () => {
         ml: { sm: "35vh", md: "47vh" },
       }}
     >
-      <Typography m={5} textAlign="center" variant="h5">
+      <Typography color="primary" m={5} textAlign="center" variant="h5">
         Studies
       </Typography>
       <SwipableStepper />

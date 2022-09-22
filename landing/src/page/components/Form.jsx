@@ -34,7 +34,7 @@ export const Form = () => {
           ></textarea>
         </div>
 
-        <Button type="submit" variant="contained" color="primary">
+        <Button type="submit" variant="contained" color="secondary">
           Send
         </Button>
       </form>

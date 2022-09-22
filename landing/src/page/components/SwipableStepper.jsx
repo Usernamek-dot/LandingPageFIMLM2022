@@ -34,7 +34,7 @@ export const SwipableStepper = () => {
         activeStep={activeStep}
         nextButton={
           <Button
-            bgcolor="secondary"
+            color="secondary"
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
@@ -48,7 +48,7 @@ export const SwipableStepper = () => {
         }
         backButton={
           <Button
-            bgcolor="secondary"
+            color="secondary"
             size="small"
             onClick={handleBack}
             disabled={activeStep === 0}

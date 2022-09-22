@@ -2,8 +2,8 @@ import { createTheme } from "@mui/material/styles";
 export const theme = createTheme({
   palette: {
     mode: "dark",
-    primary: { main: "#FFC23C" },
-    tertiary: { main: "#FEC260" },
+    primary: { main: "#9ca3af" },
+    secondary: { main: "#BB8F06" },
   },
   typography: { fontFamily: `'Poppins', sans-serif` },
 });

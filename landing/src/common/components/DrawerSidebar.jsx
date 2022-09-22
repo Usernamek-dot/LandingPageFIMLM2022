@@ -7,10 +7,10 @@ import {
   ListItem,
   List,
 } from "@mui/material";
-import AccessibilityNewIcon from "@mui/icons-material/AccessibilityNew";
 import { pages } from "../../../database/pages";
 import { useState } from "react";
 import { Loader } from "./Loader";
+import { Label } from "@mui/icons-material";
 
 export const DrawerSidebar = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -30,10 +30,13 @@ export const DrawerSidebar = () => {
         <Link to="/Home">
           <ListItem disablePadding>
             <ListItemButton onClick={handleLoader}>
-              <ListItemIcon sx={{ color: "primary.dark" }}>
-                <AccessibilityNewIcon />
+              <ListItemIcon sx={{ color: "secondary.main" }}>
+                <Label />
               </ListItemIcon>
-              <ListItemText primary="Dashboard" />
+              <ListItemText
+                sx={{ color: "primary.main" }}
+                primary="Dashboard"
+              />
             </ListItemButton>
           </ListItem>
         </Link>
@@ -44,10 +47,13 @@ export const DrawerSidebar = () => {
           <Link key={page.id} to={page.to}>
             <ListItem disablePadding>
               <ListItemButton onClick={handleLoader}>
-                <ListItemIcon sx={{ color: "primary.dark" }}>
-                  <AccessibilityNewIcon />
+                <ListItemIcon sx={{ color: "secondary.main" }}>
+                  <Label />
                 </ListItemIcon>
-                <ListItemText primary={page.primary} />
+                <ListItemText
+                  sx={{ color: "primary.main" }}
+                  primary={page.primary}
+                />
               </ListItemButton>
             </ListItem>
           </Link>

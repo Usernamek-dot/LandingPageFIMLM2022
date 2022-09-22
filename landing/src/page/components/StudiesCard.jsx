@@ -42,7 +42,7 @@ export const StudiesCard = ({
       <CardHeader
         justifycontent="between"
         avatar={
-          <Avatar sx={{ bgcolor: "primary.main" }} aria-label="avatar">
+          <Avatar sx={{ bgcolor: "secondary.main" }} aria-label="avatar">
             E
           </Avatar>
         }
@@ -61,7 +61,7 @@ export const StudiesCard = ({
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
-          color="primary"
+          color="secondary"
         >
           <ExpandMore />
         </ExpandingMore>

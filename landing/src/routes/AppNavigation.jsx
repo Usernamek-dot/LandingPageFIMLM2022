@@ -13,7 +13,7 @@ export const AppNavigation = () => {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="studies" element={<Studies />} />
           <Route path="languages" element={<Languages />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
