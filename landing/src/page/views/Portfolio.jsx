@@ -1,6 +1,7 @@
 import { GitHub, WebAsset } from "@mui/icons-material";
 import { Box, Typography, Button, Card } from "@mui/material";
 import { projects } from "../../../database/portfolio";
+import { TitlePage } from "../../common/components/TitlePage";
 
 export const Portfolio = () => {
   return (
@@ -13,9 +14,7 @@ export const Portfolio = () => {
         ml: { sm: "40vh" },
       }}
     >
-      <Typography color="primary" m={5} textAlign="center" variant="h5">
-        Portfolio
-      </Typography>
+      <TitlePage title="Portfolio" />
       {projects.map((project) => (
         <Card
           key={project.id}

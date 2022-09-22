@@ -1,4 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
+import { TitlePage } from "../../common/components/TitlePage";
 import { SwipableStepper } from "../components/SwipableStepper";
 
 export const Studies = () => {
@@ -11,9 +12,7 @@ export const Studies = () => {
         ml: { sm: "35vh", md: "47vh" },
       }}
     >
-      <Typography color="primary" m={5} textAlign="center" variant="h5">
-        Studies
-      </Typography>
+      <TitlePage title="Studies" />
       <SwipableStepper />
     </Box>
   );

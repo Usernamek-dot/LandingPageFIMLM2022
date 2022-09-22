@@ -9,6 +9,7 @@ import {
   CardActionArea,
 } from "@mui/material";
 import "animate.css";
+import { TitlePage } from "../../common/components/TitlePage";
 import { ExperienceCard } from "../components/ExperienceCard";
 import { Quotes } from "../components/Quotes";
 
@@ -22,9 +23,7 @@ export const Home = () => {
         ml: { sm: "40vh" },
       }}
     >
-      <Typography color="primary" m={5} textAlign="center" variant="h5">
-        Home
-      </Typography>
+      <TitlePage title="Home" />
       <Card
         sx={{
           mt: 6,

@@ -1,4 +1,5 @@
 import { Box, Button, Typography } from "@mui/material";
+import { TitlePage } from "../../common/components/TitlePage";
 import { Form } from "../components";
 
 export const Feedback = () => {
@@ -11,9 +12,7 @@ export const Feedback = () => {
         ml: { sm: "40vh" },
       }}
     >
-      <Typography color="primary" m={5} textAlign="center" variant="h5">
-        Feedback form
-      </Typography>
+      <TitlePage title=" Feedback form" />
       <Form />
     </Box>
   );

@@ -1,5 +1,6 @@
 import { Box, Card, CardMedia, Grid, Typography } from "@mui/material";
 import { languages } from "../../../database/languages";
+import { TitlePage } from "../../common/components/TitlePage";
 
 export const Languages = () => {
   return (
@@ -11,10 +12,7 @@ export const Languages = () => {
         ml: { sm: "40vh" },
       }}
     >
-      <Typography color="primary" m={5} textAlign="center" variant="h5">
-        Languages
-      </Typography>
-
+      <TitlePage title="Languages" />
       <Box sx={{ width: "100%" }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           {languages.map((language) => (
