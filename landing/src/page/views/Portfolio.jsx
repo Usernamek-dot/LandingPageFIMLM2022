@@ -25,7 +25,7 @@ export const Portfolio = () => {
       {projects.map((project) => (
         <Card
           key={project.id}
-          sx={{ boxShadow: 3 }}
+          sx={{ boxShadow: 3, width: { xs: "80vh", md: "200vh" } }}
           className=" 
           mb-7  mx-auto  rounded-xl overflow-hidden md:max-w-2xl "
         >
@@ -53,19 +53,29 @@ export const Portfolio = () => {
                   {project.description}
                 </Typography>
               </CardContent>
-              <CardActions>
+              <CardActions
+              // sx={{
+              //   display: { xs: "block" },
+              //  width: { xs: "34vh" }
+              // }}
+              >
                 <Button
-                  size="small"
+                  size="large"
                   role="button"
                   target="_blank"
                   href={project.githubLink}
                   variant="link"
                   startIcon={<GitHub />}
-                  sx={{ bgcolor: "secondary.light" }}
+                  sx={{
+                    bgcolor: "secondary.light",
+                    // mb: { xs: 2 },
+                    // ml: { xs: 2 },
+                  }}
                 >
                   GitHub
                 </Button>
                 <Button
+                  size="large"
                   target="_blank"
                   href={project.websiteLink}
                   variant="link"
